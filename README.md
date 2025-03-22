@@ -1,4 +1,4 @@
-# Kaggle Competition - Equitable AI for Dermatology [Team Glycerin]
+# Kaggle Competition - Equitable AI for Dermatology Team Glycerin
 
 ## Team Members  
 - Veronica Aragon - [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/veronicaragon)
