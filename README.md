@@ -67,9 +67,7 @@ One of the significant challenges we faced was the limited computational resourc
 ---
 
 ## Results & Key Findings 🔑
-- Model evaluation metrics (accuracy, precision, recall, F1-score, RMSE, etc.)  
-- Performance comparison of different models  
-- Key insights from predictions  
+![image](https://github.com/user-attachments/assets/ca078973-f30f-4dd3-a6a2-f7c83b493137)
 
 ---
 
