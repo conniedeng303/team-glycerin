@@ -4,9 +4,15 @@
 - Veronica Aragon - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/veronicaragon)  
 - Connie Deng - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/conniedeng303)  
 - Teghpreet Singh Mago - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Teghpreet3001)  
+
+- [Team Member 4] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
+- [Team Member 5] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
+- Angela Sidhu - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/angelasidhu)  
+
 - Kamillah Ismail - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Kismail3)  
 - Samhita Reddivalam - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/samhitavt)  
 - [Team Member 6] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
+
   
 ---
 
@@ -14,11 +20,11 @@
 
 ### 🔑 Key Takeaways
 Throughout our project, we explored multiple pre-trained models, to develop a robust dermatology classification model. These included:
-- `DenseNet201`
-- `MobileNetV3`
-- `ResNet`
-- `Xception`
-- `InceptionV3`
+- DenseNet201
+- MobileNetV3
+- ResNet
+- Xception
+- InceptionV3
 
 After extensive experimentation, InceptionV3 emerged as the most effective model, achieving the highest accuracy score. Our approach emphasized iterative improvements through hyperparameter tuning, data augmentation, and model ensembling. Despite computational constraints on platforms like Kaggle and Google Colab, we optimized our workflow to refine our model’s predictive performance while maintaining efficiency.
 
@@ -33,15 +39,15 @@ To push our model’s accuracy further, we explored unique enhancements, includi
 ---
 
 ## Setup & Execution  📋
+### **Setup**  
+- Install dependencies  
+- Configure Kaggle API  
+- Set up Jupyter notebooks or development environment  
 
-### ⚙️ Setup
-To streamline our workflow, we installed essential dependencies, including TensorFlow, Pandas, NumPy, and Scikit-Learn, for efficient data preprocessing and model training. We also configured the Kaggle API for dataset access but encountered import errors when running scripts directly on Kaggle. As a result, we transitioned to Google Colab, where we mounted Google Drive for seamless data access and storage. Our setup included loading the dataset, converting image filenames to a structured format, and preparing a Jupyter Notebook environment to facilitate model experimentation.
-
-### 🚀 Execution
-Our model training pipeline involved several key steps: loading and preprocessing the dataset, applying data augmentation techniques using `ImageDataGenerator`, and fine-tuning InceptionV3 with custom dense layers. We trained our model using categorical cross-entropy loss and the Adam optimizer, carefully monitoring performance metrics such as accuracy and loss. To evaluate the model, we split the dataset into training and validation sets and generated predictions for submission. Additionally, we iterated on different hyperparameter configurations to optimize results.
-
-### 🔧 Troubleshooting & Optimization
-While setting up our environment, we encountered multiple challenges, including import errors on Kaggle, dataset directory mismatches, and computational resource limitations. We resolved these by migrating to Google Colab, using Google Drive for storage, and ensuring correct file paths for training and testing images. Additionally, we experimented with different data augmentation techniques and model architectures to mitigate overfitting and improve generalization. By addressing these technical hurdles, we successfully optimized our model for dermatology classification.
+### **Execution**  
+- How to run scripts and train models  
+- Steps to evaluate model results  
+- Troubleshooting common setup issues  
 
 ---
 
@@ -121,8 +127,16 @@ One of the significant challenges we faced was the limited computational resourc
 ---
 
 ## Next Steps & Future Improvements 🚀
-- Possible improvements for better model performance  
-- Additional data sources or techniques to explore  
-- Steps for future project development  
+## 🎯 Possible Improvements for Better Model Performance
+Enhancing data augmentation with techniques like brightness adjustment, contrast normalization, and GAN-based synthetic data generation can improve model robustness. Fine-tuning pretrained models such as EfficientNet, ConvNeXt, and Vision Transformers may enhance classification accuracy. Addressing class imbalance using weighted loss functions, oversampling, or synthetic data generation ensures better performance across diverse skin tones. Employing ensemble learning by combining CNNs, transformers, and hybrid models can further improve predictions. Additionally, leveraging explainability and fairness tools like SHAP, LIME, and Fairlearn will help analyze model decision-making and reduce biases.
+
+## 🔍 Additional Data Sources or Techniques to Explore
+
+Incorporating diverse dermatology datasets such as Fitzpatrick17k, ISIC, and HAM10000 will enrich the model’s understanding of different skin conditions. Domain adaptation techniques using general medical image datasets can improve performance in dermatology-specific cases. Self-supervised learning approaches like SimCLR or MoCo can pretrain models on unlabeled skin images before fine-tuning. Crowdsourcing dermatologists or AI-assisted tools for refining labels can enhance data accuracy and model reliability.
+
+## 🗺️ Steps for Future Project Development
+
+Continuous benchmarking of model performance by tracking F1 scores across architectures and preprocessing pipelines is crucial. Detecting and mitigating biases by evaluating model predictions across demographic subgroups will ensure fairness. Deploying the model in real-world applications, such as an API or mobile-friendly app, will allow practical testing. Collaboration with AI fairness communities, dermatology experts, and developers can refine the model and improve transparency. Establishing a user feedback loop will help validate predictions, gather insights, and iteratively refine the model to enhance accuracy and fairness.
+
 
 ---
