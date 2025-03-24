@@ -13,7 +13,14 @@
 ## Project Highlights  💫
 
 ### 🔑 Key Takeaways
-Throughout our project, we explored multiple pre-trained models, including DenseNet201, MobileNetV3, ResNet, Xception, and InceptionV3, to develop a robust dermatology classification model. After extensive experimentation, InceptionV3 emerged as the most effective model, achieving the highest accuracy score. Our approach emphasized iterative improvements through hyperparameter tuning, data augmentation, and model ensembling. Despite computational constraints on platforms like Kaggle and Google Colab, we optimized our workflow to refine our model’s predictive performance while maintaining efficiency.
+Throughout our project, we explored multiple pre-trained models, to develop a robust dermatology classification model. These included:
+- DenseNet201
+- MobileNetV3
+- ResNet
+- Xception
+- InceptionV3
+
+After extensive experimentation, InceptionV3 emerged as the most effective model, achieving the highest accuracy score. Our approach emphasized iterative improvements through hyperparameter tuning, data augmentation, and model ensembling. Despite computational constraints on platforms like Kaggle and Google Colab, we optimized our workflow to refine our model’s predictive performance while maintaining efficiency.
 
 ### 🔍 Interesting Findings
 One of the most notable discoveries was the significant impact of data augmentation on model accuracy. Techniques such as downsizing, rotation, zoom, color enhancement, brightness adjustment, and noise injection played a crucial role in improving generalization. Our team found that even slight modifications in augmentation probabilities and combinations led to noticeable performance variations. Additionally, issues such as dataset bias and overfitting posed challenges, emphasizing the need for dermatology AI models to be trained on more diverse datasets to ensure fairness across all skin tones.
