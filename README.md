@@ -66,8 +66,10 @@ This project contributes to ongoing research in **ethical AI** and supports effo
 
 The dataset used in this project is a subset of the FitzPatrick17k dataset, which contains around 17,000 dermatology images representing over 100 different skin conditions across a spectrum of skin tones measured by the FitzPatrick Skin Tone (FST) scale. For the purposes of this competition, a curated subset of ~4,500 images spanning 21 distinct conditions was provided to create a manageable, yet meaningful, classification problem while preserving the dataset's diversity and representational challenges.
 
-- Train Data: Includes labeled images of skin conditions, accompanied by metadata in train.csv. Images are organized into directories by label.
-- Test Data: Contains unlabeled images and metadata in test.csv, used for generating predictions for submission.
+- Train Data:
+  - Includes labeled images of skin conditions, accompanied by metadata in train.csv. Images are organized into directories by label.
+- Test Data:
+  - Contains unlabeled images and metadata in test.csv, used for generating predictions for submission.
 - Metadata Features:
   - md5hash: Unique identifier for each image.
   - label: Diagnosis or condition.
@@ -77,6 +79,7 @@ The dataset used in this project is a subset of the FitzPatrick17k dataset, whic
 
 
 **Data Preprocessing**
+
 Key preprocessing steps included:
  - Appending File Paths:
      - Combined metadata with file directory paths to enable seamless image loading.
