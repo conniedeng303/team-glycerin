@@ -4,7 +4,7 @@
 - Veronica Aragon - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/veronicaragon)  
 - Connie Deng - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/conniedeng303)  
 - Teghpreet Singh Mago - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Teghpreet3001)  
-- [Team Member 4] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
+- Kamillah Ismail - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Kismail3)  
 - [Team Member 5] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
 - [Team Member 6] - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](INSERT_YOUR_LINK_HERE)  
   
@@ -62,12 +62,36 @@ This project contributes to ongoing research in **ethical AI** and supports effo
 ---
 
 ## Data Exploration 🗺️
-- Overview of the dataset(s) used (Kaggle-provided + any additional sources)  
-- Data exploration and preprocessing methods  
-- **Visualizations:**  
-  - Chart 1: [Description]  
-  - Chart 2: [Description]  
-  - Chart 3: [Description]  
+**Dataset Description**
+
+The dataset used in this project is a subset of the FitzPatrick17k dataset, which contains around 17,000 dermatology images representing over 100 different skin conditions across a spectrum of skin tones measured by the FitzPatrick Skin Tone (FST) scale. For the purposes of this competition, a curated subset of ~4,500 images spanning 21 distinct conditions was provided to create a manageable, yet meaningful, classification problem while preserving the dataset's diversity and representational challenges.
+
+- Train Data: Includes labeled images of skin conditions, accompanied by metadata in train.csv. Images are organized into directories by label.
+- Test Data: Contains unlabeled images and metadata in test.csv, used for generating predictions for submission.
+- Metadata Features:
+  - md5hash: Unique identifier for each image.
+  - label: Diagnosis or condition.
+  - fitzpatrick_scale & fitzpatrick_centaur: Indicate skin tone.
+  - ddi_scale: Severity rating.
+  - Additional label partitions (nine_partition_label, three_partition_label) for various classification granularities.
+
+
+**Data Preprocessing**
+Key preprocessing steps included:
+ - Appending File Paths:
+     - Combined metadata with file directory paths to enable seamless image loading.
+ - Label Encoding:
+     - Converted categorical labels (skin condition names) into numerical form using label encoding, essential for model compatibility.
+ - Train-Validation Split:
+     - Performed an 80/20 split to divide the training set into training and validation subsets for robust performance evaluation.
+ - Image Normalization & Augmentation:
+     - Normalized image pixel values using rescaling (1./255).
+     - Employed ImageDataGenerator to apply:
+        - Rotation
+        - Width and height shift
+        - Horizontal flipping
+     - This real-time data augmentation strategy helps to mitigate overfitting and enhance model generalization.
+     
 
 ---
 
