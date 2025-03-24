@@ -13,7 +13,15 @@
 ## Project Highlights  💫
 - Key takeaways from the project  
 - Interesting findings or breakthroughs  
-- Unique approaches or innovations implemented  
+- Unique approaches or innovations implemented
+
+Throughout the project, our team explored multiple deep learning architectures to develop a robust dermatology classification model. We initially experimented with various pre-trained models, including DenseNet201, CNNs, MobileNet, MobileNetV3, Xception, ResNet, and InceptionV3. Each model was assessed for accuracy and generalization capability, with InceptionV3 ultimately proving to be the most effective. A key takeaway from our work was the significant impact of data augmentation in improving model performance. By applying transformations such as rotation, zoom, brightness adjustments, noise injection, and gaussian blur, we were able to enhance the model’s ability to generalize across diverse skin tones and conditions. This iterative experimentation allowed us to optimize our final submission and achieve a competitive accuracy score.
+
+One of the most interesting breakthroughs in our project was the realization that certain augmentation techniques had a more pronounced effect on model accuracy than others. For instance, downsizing images (tested with DenseNet201) did not yield a major improvement, whereas transformations like zooming, rotation, and shifting (applied to InceptionV3) significantly boosted performance. Additionally, despite attempts to utilize synthetic data generation techniques such as SMOTE, computational limitations prevented us from leveraging these methods effectively. Through meticulous testing of augmentation techniques, we discovered that a well-balanced combination of transformations was crucial to maximizing accuracy while avoiding overfitting.
+
+Our approach was unique in that we not only focused on optimizing a single model but also systematically analyzed how different architectures performed under various augmentation strategies. By integrating findings from different models, we fine-tuned InceptionV3 using insights gained from previous experiments. Additionally, we tackled submission formatting issues to ensure compatibility with the Kaggle evaluation system, a crucial step in obtaining valid results. Our work highlights the importance of iterative refinement, leveraging diverse models, and strategically applying augmentation to enhance performance in dermatology AI applications.
+
+
 
 ---
 
