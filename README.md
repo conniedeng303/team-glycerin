@@ -4,15 +4,14 @@
 - Veronica Aragon - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/veronicaragon)
   
 - Connie Deng - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/conniedeng303)
+
+- Samhita Reddivalam - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/samhitavt) 
   
 - Teghpreet Singh Mago - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Teghpreet3001)  
 
 - Angela Sidhu - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/angelasidhu)  
 
 - Kamillah Ismail - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/Kismail3)
-   
-- Samhita Reddivalam - [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-000?style=flat&logo=github)](https://github.com/samhitavt) 
-
   
 ---
 
@@ -40,14 +39,10 @@ To push our model’s accuracy further, we explored unique enhancements, includi
 
 ## Setup & Execution  📋
 ### **Setup**  
-- Install dependencies  
-- Configure Kaggle API  
-- Set up Jupyter notebooks or development environment  
+- The datasets need to be downloaded following: https://www.kaggle.com/competitions/bttai-ajl-2025/data
 
 ### **Execution**  
-- How to run scripts and train models  
-- Steps to evaluate model results  
-- Troubleshooting common setup issues  
+- The code for this project lies in the model_training.ipynb notebook under the notebooks folder.
 
 ---
 
@@ -105,7 +100,7 @@ Key preprocessing steps included:
 ---
 
 ## Model Development  🔧
-We initially experimented with various pre-trained models, including Inception, MobileNetV1 and V3, ResNet, and EfficientNet. Among them, Inception demonstrated the best out-of-the-box performance. Following this, our focus shifted primarily to testing different data augmentations (rotations, hues, brightness, etc.) with varying probabilities of application. Data augmentation provided to be the most useful at getting our score, for example, we created functions that created cutouts and noise injections within the images, which prevents the model from overfitting and helped us reach our final score
+We initially experimented with various pre-trained models, including DenseNet201, InceptionV3, MobileNetV1 and V3, ResNet, and EfficientNet. Among them, InceptionV3 demonstrated the best out-of-the-box performance. Following this, our focus shifted primarily to testing different data augmentations (rotations, hues, brightness, etc.) with varying probabilities of application. Data augmentation provided to be the most useful at getting our score, for example, we created functions that created cutouts and noise injections within the images, which prevents the model from overfitting and helped us reach our final score
 
 We also explored modifications at the architectural level, such as incorporating dropout to help regularize the model by preventing neurons from co-adapting too strongly. As we encountered increasing issues with overfitting, we expanded our model selection and experimented with different activation functions. Additionally, we reviewed recent machine learning research in dermatology to replicate useful methodologies—though not exactly, as many papers are tailored to specific skin conditions and do not always address our particular challenges.
 
@@ -116,8 +111,9 @@ One of the significant challenges we faced was the limited computational resourc
 
 ## Results & Key Findings 🔑
 ![image](https://github.com/user-attachments/assets/ca078973-f30f-4dd3-a6a2-f7c83b493137)
+We ended up getting a 0.44 accuracy score when submitting to the leaderboard which calculcates our model's accuracy using 70% of the test data. Our model's evaulation metrics were computing the training accuracy, validation accuracy, training loss, and validation loss. 
 
----
+The DenseNet201 model was only able to get an accuracy of 7.5%, MobileNetV1 was able to get an accuracy score of 9.5%, and InceptionV3 was able to get a higher accuracy of 25% which is why we chose to continue with InceptionV3. We then implemented different data augmentation techniques listed above to boost our accuracy with InceptionV3. 
 
 ## Impact Narrative 🌍
 - How project findings contribute to solving the real-world problem  
